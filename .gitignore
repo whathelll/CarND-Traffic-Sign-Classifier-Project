@@ -3,4 +3,5 @@ data
 *.h5
 models
 *.swp
+*.zip
 *.p
