@@ -15156,7 +15156,18 @@ AEA4wRAAACCcYAgAABBOMAQAAAj3AZkf6oOVFMFOAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Split data into training/validation/testing sets</strong></p>
+<h3 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">&#182;</a></h3><p><em>Describe how you set up the training, validation and testing data for your model. <strong>Optional</strong>: If you generated additional data, how did you generate the data? Why did you generate the data? What are the differences in the new dataset (with generated data) from the original dataset?</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Split data into training/validation/testing sets</strong><br>
+Using the sklearn modelselection function to split our test data into a training set and validation set. If we use our testing set to validate our model then we're in danger of overfitting our model to our test set and we build a model that fails to generalize to new data. So the idea here is to use 20% of our training set to validate how well our training model can predict a separate set of data without relying on our test set.</p>
 
 </div>
 </div>
@@ -15195,16 +15206,6 @@ Updated Image Shape: (32, 32, 3)
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Question-2">Question 2<a class="anchor-link" href="#Question-2">&#182;</a></h3><p><em>Describe how you set up the training, validation and testing data for your model. <strong>Optional</strong>: If you generated additional data, how did you generate the data? Why did you generate the data? What are the differences in the new dataset (with generated data) from the original dataset?</em></p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -15897,7 +15898,7 @@ achieves "EPOCH 50: Validation Accuracy = 0.992"</p>
 Type of Optimizer: AdamOptimizer<br>
 Epochs: 50<br>
 Batch Size: 128<br>
-Learning Rate: 0.0005</p>
+Learning Rate: 0.001</p>
 
 </div>
 </div>
@@ -16828,6 +16829,19 @@ iReP7s2V3AAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Test Accuracy = 0.959<br>
+Prediction accuracy on new images = 0.875</p>
+<p>Found a set of images on the Slack chats that someone shared. It was able to predict 7/8 pictures, 0.875 accuracy.<br>
+Given that this is a small number of images accuracy figures are not so statistically significant, plus I do not believe the second image even exists in the training dataset. I was really happy when I saw that the model actually did get the other image predictions correct.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
@@ -16841,16 +16855,6 @@ iReP7s2V3AAAAABJRU5ErkJggg==
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Found a set of images on the Slack chats that someone shared. It was able to predict 7/8 pictures, 0.875 accuracy</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
